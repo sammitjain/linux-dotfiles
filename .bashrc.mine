@@ -1,0 +1,28 @@
+#       888                        888                                        d8b                   
+#       888                        888                                        Y8P                   
+#       888                        888                                                              
+#       88888b.   8888b.  .d8888b  88888b.  888d888 .d8888b     88888b.d88b.  888 88888b.   .d88b.  
+#       888 "88b     "88b 88K      888 "88b 888P"  d88P"        888 "888 "88b 888 888 "88b d8P  Y8b 
+#       888  888 .d888888 "Y8888b. 888  888 888    888          888  888  888 888 888  888 88888888 
+#   d8b 888 d88P 888  888      X88 888  888 888    Y88b.    d8b 888  888  888 888 888  888 Y8b.     
+#   Y8P 88888P"  "Y888888  88888P' 888  888 888     "Y8888P Y8P 888  888  888 888 888  888  "Y8888  
+                                                                                                
+                                                                                                
+# Configure locale settings
+export LC_CTYPE=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
+# Set up aliases
+source ~/.bash_aliases.mine
+
+# Use Vi mode
+# set -o vi
+
+# Directly cd into a directory by typing it's name
+shopt -s autocd
+
+# Colorize man pages
+# export PAGER="most"
+
+# Colorize Bash Prompt
+PS1="[ \[\033[01;34m\]\u@\h\[\033[00m\] : \[\033[01;33m\]\w\[\033[00m\] ]... \n\$ "
