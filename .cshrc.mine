@@ -1,0 +1,44 @@
+# -*-shell-script-*-
+
+# For information and guidelines on what should and should NOT go
+# in here, please read sbsetupunix help:
+#   http://inside.mathworks.com/wiki/SBTools#sbsetupunix
+# In particular pay attention to the 'Typical Mistakes' that can cause
+# significant pain to the company.
+# You should also time your changes as explained in sbsetupunix help.
+
+source /mathworks/hub/share/sbtools/cshrc_setup.sh
+source ~/.aliases.mine
+# Uncomment following to use emacs via 'emacsclient' as the editor for Perforce
+#   setenv EDITOR   'sbe -w'
+#   setenv VISUAL   'sbe -w'
+#   setenv P4EDITOR 'sbe -w'
+#   setenv P4DIFF   'sbe -sb-diff'
+#   setenv P4MERGE  'sbe -sb-merge'
+# Emacsclient is a capability where an existing emacs session is reused. If you
+# want to always use a new emacs session, use
+#   setenv EDITOR   'emacs'
+#   setenv VISUAL   'emacs'
+#   setenv P4EDITOR 'emacs'
+#   setenv P4DIFF   'emacs -sb-diff'
+#   setenv P4MERGE  'emacs -sb-merge'
+# You can also use gvim as the editor via: setenv P4EDITOR 'gvim -f'
+
+# Uncomment the following to disable setmwe. See man nosetmwe
+#  alias setmwe 'man nosetmwe'
+
+setenv LC_CTYPE en_US.UTF-8
+setenv LC_ALL en_US.UTF-8
+
+setenv EDITOR 'vi'
+
+setenv P4LOGINSSO /hub/bat/share/p4admin.latest/sso/sso-client
+setenv PATH /hub/share/apps/iat/devapps/file-ownership/prod/bin/:$PATH 
+setenv PATH /hub/share/apps/iat/devapps/componentization/scripts/:$PATH
+setenv TERM konsole-256color
+setenv P4CONFIG .perforce
+setenv VISUAL vi
+setenv EDITOR vi
+
+# Bind search history
+bindkey -b ^R i-search-back
