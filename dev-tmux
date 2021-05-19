@@ -1,0 +1,10 @@
+#!/bin/bash
+tmux new-session -d -s 'SJ'
+tmux rename-window 'Code'
+tmux split-window -h
+# tmux split-window -h
+tmux new-window -n 'Debug'
+tmux split-window -h
+tmux new-window -n 'Build'
+tmux new-window -n 'MATLAB'
+tmux -2 attach-session -d
