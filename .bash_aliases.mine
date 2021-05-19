@@ -1,0 +1,32 @@
+# Custom aliases
+alias nvim='~/Downloads/nvim.appimage'
+alias ls='ls -hN --color=auto --group-directories-first'
+alias grep='grep --color=auto'
+alias sql='sqlite3'
+alias sbmgr='~/Downloads/sandbox-manager-1.23.0-x86_64.AppImage &'
+alias mwsbef='sbruntests -autofarm devel -testsuites examplefinder'
+alias clone='sbclone /local-ssd/$USER/bmasklib.latest_pass'
+alias clonebm='sbclone /local-ssd/$USER/bmain.latest_pass'
+alias ealiases='nvim ~/.bash_aliases.mine'
+alias envim='nvim ~/.config/nvim/init.vim'
+alias envimp='nvim ~/.config/nvim/vim-plug/plugins.vim'
+alias blocksearch='cd /local-ssd/sammitj/sandbox/qi_rps/matlab/toolbox/simulink/src/sl_block_search'
+alias sjsb='cd /local-ssd/sammitj/sandbox/sbef/matlab'
+alias sjqi='cd /local-ssd/sammitj/sandbox/qi_rps/matlab'
+alias sjprojects='cd /local-ssd/sammitj/sandbox/ef_projects/matlab'
+alias sjef='cd /local-ssd/sammitj/sandbox/sbef/matlab/toolbox/simulink/examplefinder'
+alias sqldb='sqlite3 /local-ssd/sammitj/sandbox/sbef/matlab/toolbox/simulink/examplefinder/db/examplefinder.db'
+alias sqldbstats='sqlite3 /local-ssd/sammitj/sandbox/sbef/matlab/toolbox/simulink/examplefinder/db/examplefinder.db ".read /home/sammitj/Desktop/work/checkhealth.sql"'
+alias sbml='sb -nodesktop -nosplash'
+alias prefdir='cd ~/.matlab/R2021b'
+
+# Sb-specific aliases
+alias intdir='cd /local-ssd/sammitj/sandbox/ef_projects/matlab/toolbox/simulink/examplefinder/src/+exampleFinder/+internal'
+alias testdir='cd /local-ssd/sammitj/sandbox/ef_projects/matlab/test/toolbox/simulink/examplefinder'
+
+# Custom Functions
+alias lsql='function _(){ ls -lh $1/*.sql; }; _'
+# alias runtests='function _(){ sbruntests -farm devel -testsuites emlfast -testlogarea /mathworks/devel/sandbox/aakashc/emlfastlogs/$1 -override-sandbox-requirements; }; _'
+
+# Get keypresses
+alias whichkey='sh ~/.scripts/whichkey'
